@@ -1,0 +1,116 @@
+Hello,
+
+My discord name is Moseir. This is going to be used as my player name.
+
+Play this game with me. The game rules are written according to the 1st attached image. The 2nd attach image is the Discord player name.
+
+This game is done turn by turn:
+
+- For each turn, I will visit a location. At each location, provide you an image with choices to be made by flipping a coin; the location is marked with a red box and is underlined. Depends on the choice, either I can advance further when the coin landed on heads, lose 1 cat live and start again elsewhere, or some event occurs if the coin landed on tails. 
+
+- In case of an event occurs, remember that event as an input or a condition for actions at future locations.
+
+- Flip the coin after an image is provided.
+
+For flipping the coin, use your own random generator. Do not write Python code and execute.
+
+Track the cat lives for me:
+
+Alive Cat: 😺
+Dead Cat: 😿
+
+CAT Lives:
+😺 😺 😺 😺 😺 😺 😺 😺 😺
+
+Create a progress bar of locations I visited. For example, there are 13 locations within a game, then create a line with 13 dots, and each time I visited a location, light that dot up. There are 13 locations within the games; if a destination are differed based on the outcome in previous location, then it is marked with multilevel numbering, e.g. 10.1, 10.2:
+
+1. Covenants Bikeshed
+2. The Count
+3. Testnet Graveyard
+4. Blockstream Economics Institute
+5. Ack-Nack Minesweeper
+6. Council of Mergers
+7. Activation Island
+8. Activation Mechanism Colosseum
+9. BIP 8 Crossroads
+10.
+  - 1. PARKING_LOT = TRUE
+  - 2. THE MINES
+11. Activation Client Release
+12. MINER SIGNALNING MILLIPEDE
+13.
+  - 1. OP_CAT IS INACTIVE
+  - 2. UASF BLACK HOLE
+  - 3. OP_CAT IS ACTIVE!!!!
+
+The game begins at START location! This is important.
+
+Let's make a HUD (heads-up display) for the game. The HUD should include:
+
+- Alive
+- Dead
+- The progress bar (labeled "Progress"). For location 10 and 13, use a nested list within, e.g:
++ 10.1 selected should look like this: [ ●--●..... [●--○]--○--○--[○--○--○] ]
++ 10.2 selected should look like this: [ ●--●..... [○--●]--○--○--[○--○--○] ]
++ 10.1 and 13.1 selected should look like this: [ ●--●..... [●--○]--●--●--[●--○--○] ]
++ 10.1 and 13.2 selected should look like this: [ ●--●..... [●--○]--●--●--[○--●--○] ]
++ 10.1 and 13.3 selected should look like this: [ ●--●..... [●--○]--●--●--[○--○--●] ]
++ 10.2 and 13.1 selected should look like this: [ ●--●..... [○--●]--●--●--[●--○--○] ]
++ 10.2 and 13.2 selected should look like this: [ ●--●..... [○--●]--●--●--[○--●--○] ]
++ 10.2 and 13.3 selected should look like this: [ ●--●..... [○--●]--●--●--[○--○--●] ]
+
+- The current location (labeled "Location")
+- The next location (labeled "Next location")
+- Events (labeled "Event"): The list of events to be used later. For testnet graveyard, pick unused app if heads and listed inside parentheses (THIS IS IMPORTANT)
+
+The heads/tails of the coin should look like this: 🪙 (Heads) / 🔄 (Tails)
+
+The HUD should display whenever you proceed the game and give answer. Use vbnet for codeblock format. 
+
+Finally, the game screen should include two components: the content from the provided iamge at each turn and a HUD as described above, separated by a line. 
+
+For example, the game screen should look something like this, inside a vbnet code block, 80 character per line maximum, add an empty line between whenever a new bullet starts:
+
+                    Welcome to BIP Land - START
+                    
+      Welcome to the COVENANTS BIKESHED.
+      Flip a coin => 🪙 (Heads)
+
+      - [SELECTED] If heads, OP_CAT gained rough consensus! Continue on.
+
+      - If tails, OP_CAT is both not powerful enough and too powerful. Lose 1 CAT LIFE and replay the COVENANTS BIKESHED.
+      
+--------------------------------------------------------------------------------
+Player: tuhdo | BIP-420
+Alive: 😺 😺 😺 😺 😺 😺 😺 😺 😺
+Dead:  None
+Progress: [●--○--○--○--○--○--○--○--○--[○--○]--○--○--[○--○--○]]
+Location: 1. Covenants Bikeshed
+Next Location: 2. The Count
+--------------------------------------------------------------------------------
+
+CONSTRAINTS:
+
+- DO NOT START THE GAME UNTIL I supply the Covenants Bikeshed image.
+
+- At the START location, if heads, the next location should be The Count, if tails, should be Covenants Bikeshed
+
+- In The Count scenario, if the coin drops to tails, then you keep replaying until either heads, or losing all lives and game over.
+
+- In the ACK-NACK MINESWEEPER, if less than 3 are heads, then add [SELECTED] to the 2nd bullet item. Otherwise, add [SELECTED] to the first bullet item.
+
+COMMENTS OUTSIDE OF CODE BLOCK (GAME SCREEN) IS FORBIDDEN.
+COMMENTS OUTSIDE OF CODE BLOCK (GAME SCREEN) IS FORBIDDEN.
+COMMENTS OUTSIDE OF CODE BLOCK (GAME SCREEN) IS FORBIDDEN.
+
+THE INFORMATION GOING TO BE ADDED TO THE GAME SCREEN, DON'T MENTION IT PRIOR IN YOUR EXPLANATION!
+
+DO NOT CONCATENATE PREVIOUS GAME SCREEN TO CURRENT GAME SCREEN!
+
+DO NOT PLAY ON YOUR OWN. ALWAYS WAIT FOR ME TO PROVIDE AN IMAGE BEFORE FLIPPING A COIN. AUTO PLAYING IS FORBIDDEN! 
+
+AFTER WRITING THE TITLE IN THE GAME SCREEN, THEN FLIPPING THE COIN IN THE SCREEN AS WELL!!
+
+Finally, I repeat again: the game screen should include two components: the content from the provided iamge at each turn and a HUD as described above, separated by a line.
+
+Let's starty by clarifying the rules again.
