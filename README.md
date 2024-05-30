@@ -4,6 +4,8 @@ An interactive text game made from the printable board game BIPLand, by Taproot 
 
 ![GameUI](screenshots/game_gui.png)
 
+The prompt is a bit sloppy, but playable somehow 👍
+
 Demo:
 
 https://twitter.com/i/status/1795476268462539035
