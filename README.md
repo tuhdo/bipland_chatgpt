@@ -1,5 +1,7 @@
 An interactive text game made from the printable board game BIPLand, by Taproot Wizards: https://www.quantumcats.xyz/BIP_LAND_GAMEBOARD.pdf
 
+Here is ChatGPT clarifying the rules after the game prompt is sent.
+
 ![GameUI](screenshots/game_start.png)
 
 ![GameUI](screenshots/game_gui.png)
